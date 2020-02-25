@@ -126,3 +126,17 @@ if "Jill" not in phonebook:
 # packages: Packages are namespaces which contain multiple packages and modules themselves. 
 # They are simply directories, but with a twist.
 # Each package in Python is a directory which MUST contain a special file called __init__.py
+
+import foo.bar
+from foo import bar
+
+# print an alphabetically sorted list of all functions in the re module, which contain the word find.
+import re
+[i for i in dir(re) if "find" in i]
+
+find_members = []
+for member in dir(re):
+    if "find" in member:
+        find_members.append(member)
+
+print(sorted(find_members))
