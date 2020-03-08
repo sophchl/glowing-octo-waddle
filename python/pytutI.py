@@ -9,6 +9,8 @@ Created on Tue Feb 25 09:12:49 2020
 #%reset 
 #clear
 #type()
+#os.getcwd()
+#type()
 
 #%% old stuff
 
@@ -86,6 +88,14 @@ listofbenefits = list_benefits()
 for i in range(0,len(listofbenefits)):
     print(build_sentence(listofbenefits[i]))
 
+#%% Lists
+
+mylist =  []
+myist.append(1)
+
+for x in mylist:
+    print(x)
+    
 
 
 #%%
@@ -200,18 +210,29 @@ if "Jill" not in phonebook:
 #%%
 ## Modules and Packages
 # module: piece of software that has a specific functionality, in python: files with .py extension
-# from fibo import .. (all: *), import fibo
+    
+# writing a module (doesnt work)
+mygame/
+mygame/game.py
+mygame/draw.py
+
+# import module objects to the current workspace (some or all)
+# from .. import ..
+# from .. import *
+
+# import with custom import name
+# import .. as ..
+
 # packages: Packages are namespaces which contain multiple packages and modules themselves. 
 # They are simply directories, but with a twist.
 # Each package in Python is a directory which MUST contain a special file called __init__.py
 
+# import 
 import foo.bar
 from foo import bar
 
-# print an alphabetically sorted list of all functions in the re module, which contain the word find.
+# ex: print an alphabetically sorted list of all functions in the re module, which contain the word find.
 import re
-
-[i for i in dir(re) if "find" in i]
 
 find_members = []
 for member in dir(re):
@@ -219,3 +240,5 @@ for member in dir(re):
         find_members.append(member)
 
 print(sorted(find_members))
+
+
