@@ -10,6 +10,84 @@ Created on Tue Feb 25 09:12:49 2020
 #clear
 #type()
 
+#%% old stuff
+
+numbers = [
+    951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,
+    615, 83, 165, 141, 501, 263, 617, 865, 575, 219, 390, 984, 592, 236, 105, 942, 941,
+    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
+    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
+    958, 609, 842, 451, 688, 753, 854, 685, 93, 857, 440, 380, 126, 721, 328, 753, 470,
+    743, 527
+]
+
+for i in range(1, 10):
+    if(i%5==0):
+        break
+    print(i)
+
+# your code goes here
+for x in numbers:
+    if(x==237):
+        break
+    if(x % 2 != 0):
+        continue
+    print(x)
+    
+# your code goes here
+for number in numbers:
+    if number == 237:
+        break
+
+    if number % 2 == 1:
+        continue
+
+    print(number)
+
+def function_with_args(Name, Function, Wish):
+    print("Hello %s, %s, I wish you %s!" %(Name, Function, Wish))
+    
+def list_benefits():
+    return ("More organized code", "More readable code", 
+            "Easier code reuse", "Allowing programmers to share and connect code together")
+
+def build_sentence(benefit):
+    return("%s is a benefit of functions!" %(benefit))
+    
+# first task: print numbers 1,2,3,4 from a range form (1,10), 3 versions
+for i in range(1,10):
+    if(i%5==0):
+        break
+    print(i)
+    
+for i in range(1,10):
+    if(i==5):
+        break
+    print(i)
+
+i=1
+while i<5:
+    print(i)
+    i=i+1
+
+# second task: from the array "numbers", print all even numbers until 237 (including 237)
+for number in numbers:
+    if(number==237):
+        break
+    if(number%2 == 1):
+        continue
+    else:
+        print(number)
+
+# build a code that prints out all benefits in a loop
+listofbenefits = list_benefits()
+listofbenefits = list_benefits()
+for i in range(0,len(listofbenefits)):
+    print(build_sentence(listofbenefits[i]))
+
+
+
 #%%
 ## functions
 
@@ -132,6 +210,7 @@ from foo import bar
 
 # print an alphabetically sorted list of all functions in the re module, which contain the word find.
 import re
+
 [i for i in dir(re) if "find" in i]
 
 find_members = []
