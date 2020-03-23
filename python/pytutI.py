@@ -15,6 +15,9 @@ Created on Tue Feb 25 09:12:49 2020
 # I edit this code
 # some more changes
 
+#add some graphicsss
+some more
+
 #%% old stuff
 
 numbers = [
