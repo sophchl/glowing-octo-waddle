@@ -10,9 +10,18 @@ Created on Tue Feb 25 09:12:49 2020
 #clear
 #type()
 #os.getcwd()
+#os.listdir()
 #type()
 
-#%% old stuff
+# content: loop, list, functions, class and objects, dictionaries, modules and packages
+
+#%% working directory
+
+# 'C:\\Users\\Sophia'
+# os.chdir('Dropbox/01_Studium/ShortProjects/MachineLearningProject/Task1a')
+# os.chdir('C:/Users/Sophia/Dropbox/01_Studium/ShortProjects/MachineLearningProject/Task1a')
+
+#%% old stuff (list, iteration, functions)
 
 numbers = [
     951, 402, 984, 651, 360, 69, 408, 319, 601, 485, 980, 507, 725, 547, 544,
@@ -94,8 +103,7 @@ mylist =  []
 myist.append(1)
 
 for x in mylist:
-    print(x)
-    
+    print(x)  
 
 
 #%%

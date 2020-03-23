@@ -4,7 +4,10 @@ Created on Sun Mar  8 08:52:15 2020
 
 @author: Sophia
 """
-# setup
+
+# content: Numpy arrays, panda basics
+
+#%% setup
 import numpy as np
 import pandas as pd
 
@@ -41,6 +44,9 @@ np_weight_lbs = np_weight_kg * 2.2
 # Print out np_weight_lbs
 print(np_weight_lbs)
 
+# find out sth about arrays
+len(np_weight_kg)
+
 
 #%% Pandas Basics
 
@@ -65,14 +71,48 @@ cars = pd.read_csv('cars.csv')
 # indexing data frames
 cars = pd.read_csv('cars.csv', index_col = 0) # import without index
 
-# print out model column as Pandas series or Pandas DataFrame, print rows
+# print out model column as Pandas series or Pandas DataFrame
 print(cars['Model'])
 print(cars[['Model']])
+
+# print rows
 print(cars[0:4])
 
-# indexing rows using loc (label-based) and iloc (integer index based)
-print(cars.iloc[2]) # second column
+# indexing row using loc (label-based) and iloc (integer index based)
+print(cars.iloc[2]) # second row
 print(cars.loc[['Acura']]) # all rows that contain Acuras
 
+# check for missings/fill/drop missings
+cars.isnull()
+cars.fillna(0)
+cars.dropna()
+
+# iterating
+for i,j in cars.iterrows():
+    print(i,j)
+    print()
+
+# over columns 
+
+columns = list(cars)
+for i in columns:
+    print (cars[i][2])
+    
+# add columns
+newcol = [0]*cars.shape[0]
+cars['newcol'] = newcol
+
+# concatenate 2 dataframes
+# add below
+double_cars = pd.concat([cars,cars])
+# add to side
+double_cars2 = pd.concat([cars,cars], axis = 1)
+
+# get information
+cars.shape
+list(cars) # get all colnames
+list(cars.columns.values) # same thing?
+cars.columns
+cars.head()
 
 
