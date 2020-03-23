@@ -12,11 +12,6 @@ Created on Tue Feb 25 09:12:49 2020
 #os.getcwd()
 #type()
 
-# I edit this code
-# some more changes
-
-#add some graphicsss
-some more
 
 #%% old stuff
 
