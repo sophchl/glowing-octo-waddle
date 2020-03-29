@@ -15,8 +15,6 @@ Created on Tue Feb 25 09:12:49 2020
 
 # content: loop, list, functions, class and objects, dictionaries, modules and packages
 
-#%% old stuff
-
 #%% working directory
 
 # 'C:\\Users\\Sophia'
