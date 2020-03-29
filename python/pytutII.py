@@ -71,9 +71,11 @@ cars = pd.read_csv('cars.csv')
 # indexing data frames
 cars = pd.read_csv('cars.csv', index_col = 0) # import without index
 
-# print out model column as Pandas series or Pandas DataFrame
+# print out model column as Pandas series or Pandas DataFrame, by name or position
 print(cars['Model'])
+cars.Model
 print(cars[['Model']])
+cars.iloc[:,2]
 
 # print rows
 print(cars[0:4])

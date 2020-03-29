@@ -20,6 +20,7 @@ Created on Tue Feb 25 09:12:49 2020
 # 'C:\\Users\\Sophia'
 # os.chdir('Dropbox/01_Studium/ShortProjects/MachineLearningProject/Task1a')
 # os.chdir('C:/Users/Sophia/Dropbox/01_Studium/ShortProjects/MachineLearningProject/Task1a')
+# os.chdir('C:/Users/Sophia/Dropbox/01_Studium/ShortProjects/VarianceVertigo')
 
 #%% old stuff (list, iteration, functions)
 
